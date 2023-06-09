@@ -1,0 +1,181 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Regras Gerais */
+header {
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 28px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1{
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+h2{
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+img {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+button{
+    padding: 16px;
+    background-color: rgb(0, 226, 209);
+    color: #000;
+    font-weight: 700;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgb(175, 246, 240);
+    cursor: pointer;
+}
+
+/* Fim das Regras Gerais */
+
+/* Conteúdo dos Blocos */
+
+.conteudo__grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding: 8px;
+    align-items: center;
+    justify-items: center;
+}
+
+.conteudo__grid > div{
+    display: grid;
+    justify-items: center;
+}
+
+.conteudo__grid img{
+    margin-bottom: 16px;
+    max-width: 80%;
+    
+}
+
+.conteudo__grid1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 16px;
+    background-color: #000;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Fim do Conteúdo dos Blocos */
+
+.titulos {
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 28px;
+}
+
+section .titulos h1{
+    padding: 16px;
+}
+
+section .titulos h2{
+    padding: 24px;
+}
+
+/*Conteúdo dos Cards */
+
+.card{
+    padding: 16px;
+    border-radius: 20px;
+    color: #fff;
+    box-shadow: 5px 10px 8px #434343;
+
+}
+
+.card h2{
+    padding-bottom: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.card li{
+    padding: 8px;
+}
+
+.carrosel{
+    text-align: center;
+}
+
+.carrosel button{
+
+}
+
+.passos{
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.passos > div{
+    padding: 16px;
+}
+
+.passos img{
+    padding: 16px;
+}
+
+.passo__info{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+/* Modificadores */
+
+.bgc--ccc{
+    background: #ccc;
+}
+
+.bgc--blue{
+    background-color: rgb(130, 0, 251);
+}
+
+.color--red{
+    color: #f5365f;
+}
+
+.color--blue{
+    color: blue;
+}
+
+
+
+/* Media Query */
+
+@media screen and (max-width: 760px) {
+    .container, .conteudo, .conteudo__grid{
+        display: block;
+        text-align: center;
+    }
+
+    .lista{
+        text-align: left;
+    }
+
+    .container{
+        max-width: 90%;
+    }
+
+}
